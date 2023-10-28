@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:orientation="vertical"
+
+android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="true"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/identifiez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identifiez-vous"
+            android:textSize="25dp"
+
+
+            />
+
+
+        <LinearLayout
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/identifiez"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dateIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_alternate_email_24" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:id="@+id/passwordicon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_password_24" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mot de passe"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/oublie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:text="MOT DE PASSE OUBLIE ?"
+            android:textColor="@color/blue"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/connectez"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oublie"
+            android:layout_marginTop="50dp"
+            android:paddingVertical="13dp"
+            android:text="CONNECTEZ-VOUS"
+
+
+android:background="@drawable/btn1"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+
+
+
+
+            android:textAllCaps="false" />
+
+        <LinearLayout
+            android:id="@+id/nouveau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connectez"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nouveau sur Jumia?"
+
+                />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:background="#00FFFFFF"
+                android:id="@+id/creeCompte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREE UN COMPTE"
+                android:textColor="@color/blue"
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nouveau"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.02dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="OU"
+                android:textFontWeight="100"
+                android:textSize="20dp" />
+
+            <View
+
+                android:layout_width="0dp"
+                android:layout_height="0.02dp"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ou"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/facebook" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:text=" Contunier avec Facebook"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
