@@ -46,11 +46,10 @@ public class HomeActivity extends AppCompatActivity {
     public void goToMainActivity(){
         Intent intent=new Intent(HomeActivity.this, MainActivity.class);
 
-        Bundle bundle = new Bundle();
 
-        intent.putExtras(bundle);
 
         this.startActivity(intent);
+        finish();
     }
 
 }
